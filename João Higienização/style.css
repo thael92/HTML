@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.pagina-interia{
+    width: 100vw;
+    height: 100vh;
+}
 .Icone-lado-sofar {
     height: 300px;
     cursor: pointer;
@@ -11,7 +14,7 @@
     }
 
 .logo {
-    height: 100px;
+    height: 200px;
 
 }
 
@@ -30,10 +33,6 @@ button {
 
 }
 
-body {
-    height: 100vh;
-
-}
 
 .caixa-mae {
     display: flex;
@@ -139,7 +138,7 @@ video {
     gap: 20px;
     flex-direction: column;
     position: fixed;
-    top: 100px;
+    top: 200px;
     left: -300px;
     padding: 20px;
     border-radius: 7px;
@@ -202,9 +201,56 @@ textarea {
     }
 
 
- @media (max-width: 1000px){
+ @media (max-width: 600px){
     p { display: none;}
     .caixa-mae{
         flex-direction: column;
     }
+    .caixa-mae {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 42px;
+        height: 50vh;
+        color: aliceblue;
+        position: relative;
+        font-size: 14px;
+        text-align: center;
+    }
+    .formulario-fale-conosco {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        position: absolute;
+        top: 200px;
+        left: -300px;
+        padding: 20px;
+        border-radius: 7px;
+        transition: left 1s ease-in-out;
+    }
+    .Icone-lado-sofar{
+        display: none;
+    }
+    .icons-instagram {
+        right: 20px;
+        top: 83%;
+        position: fixed;
+        left: 5px;
+        display: block;
+    }
+    
+    .whatsapp {
+        right: 20px;
+        top: 90%;
+        position: fixed;
+        left: 5px;
+        display: block;
+    }
+    .logo {
+        height: 150px;
+        position: relative;
+    
+    }
+   
  }
